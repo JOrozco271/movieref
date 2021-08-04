@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main section {
+  display: none;
+}
+
+main section p {
+  margin: 1rem;
+}
+
+main section h2 {
+  text-align: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav a {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background-color: lightgray;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: gray;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .card {
+  width: 250px;
+  background-color: gray;
+  margin: 0.5rem;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.container .card h3 {
+  margin: 0;
+}
+
+.container .card img {
+  width: 200px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .card p {
+  text-align: right;
+  padding-right: 25px;
+  margin: 0.25rem;
+}
+
+.container .card span:nth-of-type(1) {
+  padding-left: 25px;
+}
+
+.container .card span:nth-of-type(2) {
+  float: right;
+  padding-right: 25px;
+}
+
+#animated ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#animated ul li {
+  padding: 0.5rem 1rem;
+}
+
+#animated ul li:nth-child(even) {
+  background-color: cyan;
+}
+
+#animated ul li:nth-child(odd) {
+  background-color: darkgoldenrod;
+}
+
+form label {
+  display: block;
+  margin: 1rem auto;
+}
+
+form button {
+  margin: 1rem;
+}
+/*# sourceMappingURL=style.css.map */

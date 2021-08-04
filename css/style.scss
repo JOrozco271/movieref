@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    section{
+        display: none;
+        p{
+            margin: 1rem;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        flex-grow: 1;
+        margin: 1rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        background-color: lightgray;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        &:hover{
+            background-color: gray;
+            color: white;
+        }
+    }
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+    .card{
+        width: 250px;
+        background-color: gray;
+        margin: 0.5rem;
+        padding: 0.5rem 0.25rem;
+        border-radius: 0.5rem;
+        h3{
+            margin: 0;
+        }
+        img{
+            width: 200px;
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        p{
+                text-align: right;
+                padding-right: 25px;
+                margin: 0.25rem;
+        }
+        span{
+            &:nth-of-type(1){
+                padding-left: 25px;
+            }
+            &:nth-of-type(2){
+                float: right;
+                padding-right: 25px;
+            }
+        }
+        
+    }   
+}
+
+#animated ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+        padding: 0.5rem 1rem;
+        &:nth-child(even){
+        background-color: cyan;
+        }
+        &:nth-child(odd){
+        background-color: darkgoldenrod;
+        }
+    }
+}
+
+form{
+    label{
+    display: block;
+    margin: 1rem auto;
+    }
+    button{
+        margin: 1rem;
+        
+    }
+}
